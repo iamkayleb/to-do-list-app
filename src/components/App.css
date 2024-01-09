@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../assets/images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  background-color: hsl(235, 21%, 11%); display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 0; 
+  margin: 0; 
+  min-height: 100vh; 
+  font-family: "Josefin Sans", sans-serif;
+}
+main {
+  max-width: 900px;
+  
+}
+header, h1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.2in;
+  color: white;
+}
+
+.theme {
+  max-width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-self: center;
+}
+form {
+  display: flex;
+  background-color: hsl(235, 24%, 19%);
+  margin: 10px 0;
+  padding: 10px;
+}
+input  {
+  width: 600px;
+  background-color:  hsl(235, 24%, 19%);
+  border: none;
+}
+.add-container {
+  border: 1px solid hsl(237, 14%, 26%);
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  margin: 10px;
+  background: none;
+}
+
+.todo {
+  background-color:  hsl(235, 24%, 19%);
+  padding: 10px;
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+  display: flex;
+  font-family: "Josefin Sans";
+  color: hsl(234, 39%, 85%);
+  
+}
+li {
+  padding: 0 10px;
+  list-style: none;
+}
+/* .check-false {
+  border: 1px solid hsl(237, 14%, 26%);
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: white;
+} */
+/* .check {
+
+} */
+.deleteBtn {
+  color: white;
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+.filter-box{
+  display: flex;
+  justify-content: space-between;
+  background-color:  hsl(235, 24%, 19%);
+  padding: 10px 5px;
+  font-family: "Josefin Sans";
+  color: hsl(236, 9%, 61%);
+}
+.filter-todos {
+  display: inline-block;
+  margin: 0 5px;
+}
+.filter-todos > * {
+  margin: 0 5px;
+  background: none;
+  color: hsl(236, 9%, 61%);
+  border: none;
+}
+.filter-todos>*:hover {
+  color: hsl(0, 0%, 98%);
+}
+.filter-todos>*:focus {
+  color: hsl(220, 98%, 61%);
+}
